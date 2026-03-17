@@ -10,7 +10,7 @@
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #1e1e2f, #2a2a3f);
+            background: linear-gradient(135deg, #2e1e3f, #502a6a);
             color: #fff;
         }
 
@@ -28,26 +28,12 @@
 
         /* 사이드바 */
         .sidebar {
-            background: rgba(30, 30, 50, 0.95);
+            background: rgba(50, 20, 60, 0.95);
             padding: 30px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            border-right: 2px solid #ff6a00;
-        }
-
-        .profile-pic {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid #ff6a00;
-            margin-bottom: 15px;
-            object-fit: cover;
-            transition: transform 0.3s;
-        }
-
-        .profile-pic:hover {
-            transform: scale(1.1);
+            border-right: 2px solid #ff66cc;
         }
 
         .intro {
@@ -58,12 +44,12 @@
             font-family: 'JetBrains Mono', monospace;
             font-size: 24px;
             margin: 10px 0 5px;
-            color: #ff6a00;
+            color: #ff66cc;
         }
 
         .intro p {
             font-size: 14px;
-            color: #ccc;
+            color: #e0b0ff;
         }
 
         /* 게시글 영역 */
@@ -78,30 +64,30 @@
         .post {
             background: rgba(255, 255, 255, 0.05);
             padding: 20px;
-            border-left: 5px solid #ff6a00;
+            border-left: 5px solid #ff66cc;
             border-radius: 8px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .post:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(255, 106, 0, 0.3);
+            box-shadow: 0 10px 20px rgba(255, 102, 204, 0.3);
         }
 
         .post h2 {
             font-family: 'JetBrains Mono', monospace;
-            color: #ff6a00;
+            color: #ff66cc;
             margin-bottom: 10px;
         }
 
         .post p {
-            color: #ddd;
+            color: #e0b0ff;
             line-height: 1.5;
         }
 
-        /* 화려한 애니메이션 요소 */
+        /* 화려한 글로우 효과 */
         .glow {
-            text-shadow: 0 0 5px #ff6a00, 0 0 10px #ff6a00, 0 0 20px #ff6a00;
+            text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 40px #e0b0ff;
         }
 
         /* 스크롤바 스타일 */
@@ -110,7 +96,7 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background: #ff6a00;
+            background: #ff66cc;
             border-radius: 5px;
         }
 
@@ -123,7 +109,6 @@
     <div class="container">
         <!-- 사이드바 -->
         <aside class="sidebar">
-            <img src="profile.jpg" alt="민지 프로필" class="profile-pic">
             <div class="intro">
                 <h1 class="glow">민지 개발자</h1>
                 <p>프론트엔드 & 백엔드 개발을 좋아하는 블로거.<br>
